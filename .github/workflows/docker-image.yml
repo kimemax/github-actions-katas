@@ -1,7 +1,7 @@
 name: Docker image
 on: push
 env:
-  docker_username:  docker_username: ${{ github.actor }} 
+  docker_username: ${{ github.actor }} 
   docker_password: ${{ secrets.GITHUB_TOKEN }} #Nees to be set to be made available to the workflow
   #GIT_COMMIT: github.sha
 jobs:
