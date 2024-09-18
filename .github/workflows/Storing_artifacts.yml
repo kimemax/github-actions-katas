@@ -34,9 +34,9 @@ jobs:
         uses: actions/upload-artifact@v4 # Action to use
         with: # Parameters for the action
           name: my-artifact # Name of the artifact to upload. Optional. Default is 'artifact
-          path: path/to/artifact/ # A file, directory or wildcard pattern that describes what to upload. Required.
+          path: https://github.com/kimemax/github-actions-katas/actions/runs/1/artifacts/1234 #path/to/artifact/ # A file, directory or wildcard pattern that describes what to upload. Required.
       - name: Download a single artifact # Name of the step
         uses: actions/download-artifact@v4 # Action to use
         with: # Parameters for the action
           name: my-artifact # Name of the artifact to download. Optional. If unspecified, all artifacts for the run are downloaded.
-          path: path/to/download/artifact/     # Destination path. Supports basic tilde expansion.  # Optional. Default is $GITHUB_WORKSPACE
+          path: https://github.com/kimemax/github-actions-katas/actions/runs/1/artifacts/1234/download #path/to/download/artifact/     # Destination path. Supports basic tilde expansion.  # Optional. Default is $GITHUB_WORKSPACE
